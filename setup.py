@@ -16,9 +16,11 @@ except:
 	import sys
 	sys.exit(1)
 
+version = open('VERSION').read().strip()
+
 setup(
 	name				= "netsnmpagent",
-	version				= "@NETSNMPAGENT_VERSION@",
+	version				= version,
 	description			= "Facilitates writing Net-SNMP (AgentX) subagents in Python",
 	long_description	= """
 python-netsnmpagent is a Python module that facilitates writing Net-SNMP
